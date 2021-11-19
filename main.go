@@ -49,7 +49,7 @@ func startServer() {
 
 	models.Init(eng.MysqlConnection())
 
-	_ = r.Run(":1022")
+	_ = r.Run(":1234")
 
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
